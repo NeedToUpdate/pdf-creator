@@ -38,8 +38,7 @@ services:
     env_file:
       - ./.env
     ports:
-      - "80:80"
-      - "443:443"
+      - "127.0.0.1:20001:80"
     volumes:
       - nginxdata:/var/log/nginx
     depends_on:
